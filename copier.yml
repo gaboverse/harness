@@ -29,12 +29,17 @@ documentation_language:
 skills:
   type: str
   multiselect: true
-  help: Select the skills to install. Previously selected skills are shown as the defaults during updates.
+  help: Select the skills to install
   choices:
-    SDD — Spec-driven development: sdd
-    Gitmoji — Git commit conventions: gitmoji
-  default: "{{ skills | default(['sdd']) | to_json }}"
+    "SDD — Spec-driven development": sdd
+    "Gitmoji — Git commit conventions": gitmoji
+  default: '["sdd"]'
 
 _exclude:
-  - "{% if 'sdd' not in skills %}.agents/skills/sdd/**{% endif %}"
-  - "{% if 'gitmoji' not in skills %}.agents/skills/gitmoji/**{% endif %}"
+  - |
+    {% if 'sdd' not in skills %}
+    .agents/skills/sdd/
+    {% endif %}
+    {% if 'gitmoji' not in skills %}
+    .agents/skills/gitmoji/
+    {% endif %}
