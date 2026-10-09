@@ -26,6 +26,15 @@ documentation_language:
     Spanish: es
   default: en
 
-# Skill selection is deliberately not implemented yet. The desired behavior
-# is additive across `copier update`: retain installed skills and let users
-# opt into new ones. Implement after a prototype proves this with update tests.
+skills:
+  type: str
+  multiselect: true
+  help: Select the skills to install. Previously selected skills are shown as the defaults during updates.
+  choices:
+    SDD — Spec-driven development: sdd
+    Gitmoji — Git commit conventions: gitmoji
+  default: "{{ skills | default(['sdd']) | to_json }}"
+
+_exclude:
+  - "{% if 'sdd' not in skills %}.agents/skills/sdd/**{% endif %}"
+  - "{% if 'gitmoji' not in skills %}.agents/skills/gitmoji/**{% endif %}"
