@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+!.env.*.example
+.tmp/
+.temp/
+.cache/
+coverage/
+dist/
+build/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

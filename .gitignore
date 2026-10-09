@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+!.env.*.example
+.opencode/
+.opencode-state/
+.agent-cache/
+.tmp/
+.temp/
+.cache/
+coverage/
+dist/
+build/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
