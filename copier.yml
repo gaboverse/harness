@@ -35,11 +35,12 @@ skills:
     "Gitmoji — Git commit conventions": gitmoji
   default: '["sdd"]'
 
+
 _exclude:
   - |
     {% if 'sdd' not in skills %}
-    .agents/skills/sdd/
+    /.agents/skills/sdd/
     {% endif %}
     {% if 'gitmoji' not in skills %}
-    .agents/skills/gitmoji/
+    /.agents/skills/gitmoji/
     {% endif %}
