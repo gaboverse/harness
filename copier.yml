@@ -26,10 +26,10 @@ documentation_language:
     Spanish: es
   default: en
 
-skills:
+core_skills:
   type: str
   multiselect: true
-  help: Select the core skills to install
+  help: Select the core skills maintained by Harness
   choices:
     "SDD — Spec-driven development": core-sdd
     "Gitmoji — Git commit conventions": core-gitmoji
