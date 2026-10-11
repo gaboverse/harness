@@ -8,13 +8,14 @@ The system is technology-agnostic by default. SDD is its initial working methodo
 
 ## Start here
 
-1. Read [`docs/standards/project-structure.md`](docs/standards/project-structure.md).
-2. Read [`docs/standards/sdd-workflow.md`](docs/standards/sdd-workflow.md).
-3. Review [`copier.yml`](copier.yml).
+1. Read [the Harness contract](docs/standards/harness-contract.md).
+2. Read [the project structure standard](docs/standards/project-structure.md).
+3. Read [the SDD workflow](docs/standards/sdd-workflow.md).
+4. Review [the Copier configuration](copier.yml).
 
 ## Project status
 
-This is an initial scaffold. Project generation, skill composition, compatibility with the selected agent runtime, and Copier update behavior must be validated with automated tests before being considered stable.
+This is an early-stage scaffold. Core skill selection, addition, removal, and custom skill preservation have been manually exercised. Automated regression tests and OpenCode runtime compatibility still need to be validated before the template can be considered stable.
 
 ## Principles
 
