@@ -29,18 +29,8 @@ documentation_language:
 skills:
   type: str
   multiselect: true
-  help: Select the skills to install
+  help: Select the core skills to install
   choices:
-    "SDD — Spec-driven development": sdd
-    "Gitmoji — Git commit conventions": gitmoji
-  default: '["sdd"]'
-
-
-_exclude:
-  - |
-    {% if 'sdd' not in skills %}
-    /.agents/skills/sdd/
-    {% endif %}
-    {% if 'gitmoji' not in skills %}
-    /.agents/skills/gitmoji/
-    {% endif %}
+    "SDD — Spec-driven development": core-sdd
+    "Gitmoji — Git commit conventions": core-gitmoji
+  default: '["core-sdd"]'

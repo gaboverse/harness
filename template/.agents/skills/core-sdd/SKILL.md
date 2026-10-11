@@ -1,5 +1,5 @@
 ---
-name: sdd
+name: core-sdd
 description: Guide discovery, specification, approval, implementation, and validation using an adaptive spec-driven development workflow.
 ---
 

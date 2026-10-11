@@ -1,5 +1,5 @@
 ---
-name: gitmoji
+name: core-gitmoji
 description: Use Gitmoji to write clear, consistent Git commit messages.
 ---
 
